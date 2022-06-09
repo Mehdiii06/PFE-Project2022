@@ -1,0 +1,44 @@
+@import "../../styles/variables.scss";
+
+.all2 {
+  background: $bg;
+  border-radius: $borderRadius;
+  border: 2px dashed black;
+  min-height: calc(100vh - 9rem);
+  padding: 3rem 5rem 3rem 5rem;
+  font-family: $Montserrat;
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0rem;
+    .status {
+      margin-bottom: 0rem;
+      color: $primary;
+      font-style: italic;
+      font-weight: normal;
+      font-size: large;
+    }
+
+    .closeBtn {
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .claim {
+    padding-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    .pm {
+      font-size: large;
+    }
+    h1 {
+      margin-bottom: .5em;
+    }
+  }
+}

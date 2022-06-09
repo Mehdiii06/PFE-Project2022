@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.row {
+  background: $bg;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+  
+  
+  .div1 {
+    margin-top: 5em;
+    background: $bg;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-left: 4em;
+    padding-top: 2em;
+    padding-right: 4em;
+    
+  }
+  
+}

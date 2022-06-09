@@ -1,0 +1,17 @@
+@import "../../../styles/variables.scss";
+
+.ADD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $borderRadius;
+    border: 2px dashed $dark;
+    height: 12em;
+    button {
+        border: 0px;
+        .addicon {
+            height: 100px;
+            width: 5rem;
+        }
+    }
+    }

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,500&display=swap');
+
+$Montserrat: 'Montserrat', sans-serif;
+
+// colors
+$dark: #333B34; 
+$light: #fff;
+$primary: #C7D435;
+$bg: #EFEFEF;
+
+// spacing
+$spacing-md: 6px;
+$spacing-lg: 2px;
+
+// border radius
+$borderRadius: 12px;
+
+// header height
+$headerHeight: 5rem;
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        // 768px
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+}
+
+@mixin breakpoint2($point) {
+    @if $point == sd {
+        // 768px
+        @media (max-width: 38em) {
+            @content;
+        }
+    }
+}

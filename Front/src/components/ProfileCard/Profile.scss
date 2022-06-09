@@ -1,0 +1,180 @@
+@import "../../styles/variables.scss";
+
+.contentProfile {
+  position: fixed;
+  width: 100%;
+  z-index: 9999999;
+  background: $bg;
+  min-height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0rem 3rem 0rem 3rem;
+  .div2 {
+    background: $light;
+    padding: 3rem 3rem 0rem 3rem;
+    border-radius: $borderRadius $borderRadius 0 0;
+    min-height: calc(90vh - 5rem);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    .left {
+      margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: calc(90vh - 5rem);
+      border-radius: $borderRadius 0 0 0;
+      background: $bg;
+
+      .imguser {
+        padding: 1em;
+        height: 12rem;
+        width: 12rem;
+        border: 3px solid $primary;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .userImg {
+          padding: 0.4em;
+          height: 12rem;
+          width: 12rem;
+          border-radius: 50%;
+        }
+      }
+      .userTitle {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        font-family: $Montserrat;
+        h2 {
+          text-align: center;
+          color: $primary;
+        }
+        .role {
+          font-size: 0.8em;
+        }
+      }
+    }
+    .right {
+      margin-left: 2rem;
+      padding-right: 2rem;
+      border-top: 3px dashed $bg;
+      border-right: 3px dashed $bg;
+      border-left: 3px dashed $bg;
+      border-radius: 0 $borderRadius 0 0;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 5;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(90vh - 5rem);
+      .user {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .headerProfile {
+          margin-top: 1.5rem;
+          margin-bottom: 1rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+
+          .btnEdit {
+            border: 0px;
+            background: $primary;
+            border-radius: 50%;
+            padding: 0px;
+            width: 45px;
+            height: 45px;
+            .iconEdit {
+              padding: 0px;
+              width: 22px;
+              height: 22px;
+              color: white;
+            }
+          }
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          li {
+            margin-top: 1em;
+            margin-bottom: 3em;
+            padding-bottom: 0.5em;
+            color: grey;
+            background-color: #ffffff;
+            border-bottom: 2px solid $bg;
+
+            h5 {
+              margin-bottom: 0.4em;
+              color: black;
+              font-family: $Montserrat;
+            }
+            .content {
+              height: 2em;
+              display: flex;
+              flex-direction: row;
+              align-items: flex-end;
+              justify-items: center;
+              justify-content: space-between;
+
+              .tt {
+                font-size: medium;
+              }
+              button {
+                background: $primary;
+                color: white;
+                border: 3px $bg;
+                border-style: outset;
+                padding: 0.3em;
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+                cursor: pointer;
+              }
+            }
+            .password {
+              height: 2em;
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              justify-items: center;
+              justify-content: space-between;
+              .passwordForm {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                .editLabel {
+                  width: 16rem;
+
+                }
+              }
+              button {
+                background: $primary;
+                color: white;
+                border: 2px solid $primary;
+                width: 4rem;
+                margin-right: 0.5em;
+                padding: .3rem;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

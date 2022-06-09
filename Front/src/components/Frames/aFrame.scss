@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+
+
+.roww {
+  background: $bg;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  justify-content: center;
+  height: 100vh;
+  
+  
+  .divv {
+    margin-top: 5em;
+    background: $bg;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-left: 4em;
+    padding-top: 2em;
+    padding-right: 4em;
+    
+  }
+  
+  .divv2 {
+    margin-top: 5em;
+    background: white;
+    flex-direction: row;
+    justify-content: center; 
+    
+  }
+}

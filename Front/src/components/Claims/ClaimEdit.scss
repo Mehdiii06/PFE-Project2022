@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+.all2 {
+    background: $bg;
+    border-radius: $borderRadius;
+    border: 2px dashed black;
+    min-height: calc(100vh - 9rem);
+    padding: 3rem 5rem 3rem 5rem;
+    font-family: $Montserrat;
+
+    .headerr {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      h1 {
+          color: $primary;
+          font-family: $Montserrat;
+      }
+
+      .closeBtn {
+          background: none;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+    }
+
+    .formClaim {
+        
+        padding-right: 10rem;
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            .submit {
+                background: $primary;
+                border: 2px solid $primary;
+                width: 7rem;
+                margin-right: .5em;
+            }
+            .reset {
+                background: white;
+                border: 2px solid $primary;
+                width: 7rem;
+            }
+        }
+    }
+    
+  }

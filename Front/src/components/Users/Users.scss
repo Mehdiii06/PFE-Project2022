@@ -1,0 +1,204 @@
+@import "../../styles/variables.scss";
+
+.grid-container {
+  height: 35.5rem;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  border-radius: $borderRadius;
+  background: $light;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
+
+  .nav {
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-right: 3px solid $bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .div {
+      height: 3em;
+      margin-bottom: 1em;
+      background: none;
+      border: none;
+      border-radius: $borderRadius;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      text-decoration:none;
+
+      div {
+        font-family: $Montserrat;
+        font-weight: bold;
+        color: $dark;
+      }
+      .icon {
+        margin: 0.8em;
+        width: 24px;
+        height: 24px;
+        color: $dark;
+      }
+      
+    }
+    .user {
+        height: 3em;
+        margin-bottom: 1em;
+        background: none;
+        border: none;
+        border-radius: $borderRadius;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: rgba(199, 212, 53, 0.3) 0px 0px 0px 3px;
+        text-decoration:none;
+  
+        div {
+          font-family: $Montserrat;
+          font-weight: bold;
+          color: $dark;
+          text-decoration: none;
+        }
+        .icon {
+          margin: 0.8em;
+          width: 24px;
+          height: 24px;
+        }
+        
+      }
+  }
+  .container {
+    padding: 2rem;
+    border-left: 1px solid $bg;
+    display: grid;
+    grid-template-rows: 3rem auto;
+    row-gap: 1rem;
+    .bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .search-container {
+        border: 1px solid $dark;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .search {
+        }
+        .icon {
+          color: $light;
+          background: $dark;
+          padding: 0.4rem;
+          padding-right: 0.6rem;
+          padding-left: 0.6rem;
+        }
+      }
+      .add {
+        padding: 0.3rem;
+        padding-right: 0.6rem;
+        padding-left: 0.6rem;
+        background: $dark;
+        color: $light;
+        border: $dark;
+        font-weight: bold;
+      }
+    }
+    .tables {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+      overflow: hidden;
+      overflow-y: auto;
+      display: grid;
+      grid-template-rows: 3rem auto;
+      padding-top: 1rem;
+      .table {
+        thead {
+          background: $dark;
+          color: $light;
+          border: none;
+          tr {
+            .id {
+              width: 25%;
+            }
+            .name {
+              width: 22%;
+            }
+            .email {
+              width: 22%;
+            }
+            .company {
+              width: 18%;
+            }
+            .actions {
+              width: 12%;
+            }
+          }
+        }
+        tbody {
+            border-top: white;
+          tr {
+            .id {
+              width: 25%;
+            }
+            .name {
+              width: 22%;
+            }
+            .email {
+              width: 22%;
+            }
+            .company {
+              width: 18%;
+            }
+            .actions {
+              width: 12%;
+              .btnD {
+                background: none;
+                padding: 0px;
+                border: 0px;
+                .iconD {
+                  margin-left: .4em;
+                  margin-right: .4em;
+                  width: 20px;
+                  height: 20px;
+                }
+                .iconD:hover {
+                  margin-left: .4em;
+                  margin-right: .4em;
+                  width: 20px;
+                  height: 20px;
+                  color: red;
+                }
+              }
+              .btnE {
+                padding: 0px;
+                border: 0px;
+                background: none;
+                .iconE {
+                  margin-left: .4em;
+                  margin-right: .4em;
+                  width: 20px;
+                  height: 20px;
+                }
+                .iconE:hover {
+                  margin-left: .4em;
+                  margin-right: .4em;
+                  width: 20px;
+                  height: 20px;
+                  color: green;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .tables::-webkit-scrollbar {
+      display: none; /* for Chrome, Safari, and Opera */
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "../../../styles/variables.scss";
+
+
+.headerUserForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    h2 {
+        font-family: $Montserrat;
+        color: $primary;
+    }
+    .addForm {
+        background: none;
+        border: 0px;
+    }
+  }
+  .formClaim {
+    .buttonsForm {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        .submit {
+            background: $primary;
+            border: 2px solid $primary;
+            width: 7rem;
+            margin-right: .5em;
+        }
+        .reset {
+            background: white;
+            border: 2px solid $primary;
+            width: 7rem;
+        }
+    }
+  }  

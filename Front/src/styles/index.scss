@@ -1,0 +1,31 @@
+@import "./variables.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: $Montserrat;
+    color: $dark;
+
+    background: url('../assets/images/landing.png') no-repeat center center fixed;
+    background-size: cover;
+
+    @media screen and (max-width: 800px){
+        
+        position:absolute;
+        right:0;
+        left:0;
+        top:0;
+        bottom:0;
+        overflow-x:hidden;
+        overflow-y:scroll;
+        
+    }
+}
+
+#root {
+    height: 100%;
+}

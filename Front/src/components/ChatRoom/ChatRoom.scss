@@ -1,0 +1,39 @@
+@import "../../styles//variables.scss";
+
+.chat-main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  border-left: 3px solid $bg;
+  box-shadow: -10px 0px 12px 0px #aaa;
+
+  .joinChatContainer {
+    display: grid;
+    grid-template-rows: 12% 88%;
+    background: $bg;
+    .chatheader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $dark;
+      color: white;
+      border: 6px solid $bg;
+    }
+    .joinchatbody {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3em;
+      background: $bg;
+    }
+  }
+}
+
+.join-btn {
+  background: $primary;
+  border: 0px;
+  color: black;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 7px ;
+}

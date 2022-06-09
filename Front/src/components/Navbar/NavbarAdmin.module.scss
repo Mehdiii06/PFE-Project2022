@@ -1,0 +1,73 @@
+@import "../../styles/variables.scss";
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 99999999;
+  background: $dark;
+  height: $headerHeight;
+  border-bottom: 3px solid #c7d435;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  @include breakpoint(md) {
+    padding: 0 3rem;
+  }
+  &__navbar3 {
+    &__Container {
+      &__logo {
+        height: 1.9rem;
+        display: block;
+        min-width: 5%;
+        //display: none;
+        @media only screen and (max-width: 870px) and (min-width: 750px) {
+          display: none;
+        }
+        @media only screen and (max-width: 460px) {
+          display: none;
+        }
+      }
+    }
+  }
+  &__menuNav {
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      &__NavLink {
+        color: white;
+        padding: 6px;
+        border-bottom: 3px solid $primary;
+        margin-right: 2em;
+      }
+      &__NavLink:hover {
+        color: $dark;
+        padding: 6px;
+        background: $primary;
+        margin-right: 2em;
+      }
+      &__Dropdown {
+        background: $primary;
+        border-radius: $borderRadius;
+        border: 2xp solid $primary;
+        &__Toggle {
+          background: $primary;
+          border-radius: $borderRadius;
+          border: 2xp solid $primary;
+        }
+        &__Menu {
+        }
+        &__Item {
+          &__icon {
+            margin-right: 15px;
+          }
+        }
+      }
+
+      &__icon {
+        margin-left: 2em;
+      }
+    }
+  }
+}

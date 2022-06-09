@@ -1,0 +1,71 @@
+@import '../../styles/variables.scss';
+
+.row {
+    width: 100%;
+    min-height: calc(100vh - 5rem);
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint2(sd) {
+        transform: none;
+        flex-direction: column-reverse;
+        padding: 30px;
+        h1 {
+            font-size: 50px;
+        }
+    }
+    
+    &__block {
+        margin: 0 auto;
+        height: 100%;
+
+        &__txt  {
+            color: $light;
+            font-size: 100px;
+            font-weight: bold;
+
+            span {
+                color: $primary;
+            }
+        }
+
+        &__login {
+            background: white;
+            padding: 3rem 3rem;
+            border-radius: 35px;
+            min-width: 30vh;
+            min-height: 40vh;
+
+            h1 {
+                font-size: 50px;
+                font-weight: bold;
+                color: $primary;
+                padding-bottom: 2rem;
+            }
+
+            input {
+                width: 100%;
+                border: 0;
+                margin: 0 0 15px;
+                padding: 15px;
+                outline: 0;
+                font-size: 15px;
+                text-align: center;
+                box-sizing: border-box;
+                background: $light; 
+                border: 1px solid;
+            }
+
+            button {
+                font-size: 15px;
+                font-weight: bold;
+                width: 100%;
+                padding: 15px;
+                background: $dark;
+                color: $light;
+            }
+        }
+    }
+}

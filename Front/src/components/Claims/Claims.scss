@@ -1,0 +1,158 @@
+@import "../../styles/variables.scss";
+
+.all {
+    background: $bg;
+    border-radius: $borderRadius;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    
+    .bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      .filter {
+        border-radius: $borderRadius;
+        background: white;
+        border: 0px;
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 2.5rem;
+        margin-right: 1.5em;
+        .iconFilter {
+          margin-right: 0.5em;
+        }
+      }
+      .input-group {
+        height: 2em;
+        border-radius: $borderRadius;
+        display:flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+        width: 15rem;
+      }
+    }
+    .box {
+      
+      
+      overflow-y:auto;
+      margin-top: 2em;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 1em;
+      column-gap: 1em;
+      width: 100%;
+      height: 490px;
+      justify-content: center;
+      align-items: start;
+      padding-right: .4em;
+      @media screen and (max-width: 999px){
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (max-width: 766px){
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .colll {
+        padding-right: .2rem;
+        background: white;
+        border-radius: $borderRadius;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 12.7em;
+        padding: 0.5em 0.8em 0.5em 0.8em;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        margin-bottom: .5em;
+          margin-right: .2em;
+        .h {
+          flex: 25%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .status {
+            margin-top: 5px;
+            background: #ffaeae;
+            color: red;
+            border-radius: 8px;
+            border: none;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+          }
+          .icons {
+
+            .edit {
+              margin-left: .7em;
+              color: $dark;
+            }
+            .edit:hover {
+              color: red;
+            }
+            .open {
+              color: $dark;
+            }
+            .open:hover {
+              color: blue;
+            }
+          }
+        }
+        .body {
+          margin-top: 1em;
+          display: flex;
+          flex-direction: column;
+          flex: 75%;
+          justify-content: flex-start;
+          align-items: flex-start;
+          border-bottom: 0.3px dotted #aaaaaa;
+          margin-bottom: .3em;
+          p {
+            
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+        }
+        .date {
+          font-size: 11px;
+          font-weight: bold;
+          font-style: italic;
+          margin-bottom: 1em;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      .ADD {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: $borderRadius;
+          border: 2px dashed $dark;
+          height: 12.7em;
+          margin-bottom: .5em;
+          margin-right: .2em;
+          
+              .addicon {
+                  height: 100px;
+                  width: 5rem;
+              }
+          
+          }
+    }
+    .box::-webkit-scrollbar {
+      width: 0.2em;
+    }
+
+    .box::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .box::-webkit-scrollbar-thumb {
+      background-color: rgb(144, 144, 144);
+    }
+  }

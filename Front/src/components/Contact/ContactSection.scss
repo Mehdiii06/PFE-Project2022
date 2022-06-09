@@ -1,0 +1,83 @@
+@import "../../styles/variables.scss";
+
+.box {
+  
+  margin: 0 auto;
+  max-width: 1750px;
+  height: 60%;
+  position: relative;
+  z-index: 100;
+}
+.containerContact {
+  background: $bg;
+  padding: 1rem;
+  margin: 2rem 13rem 1rem 13rem;
+  border-radius: 8px;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    p {
+      font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 3.6rem;
+    }
+  }
+  .contactSection__wrapper {
+    display: flex;
+    gap: 4rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.3rem;
+  }
+  .contactSection__wrapper::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 85%;
+    background-color: $primary;
+    left: 60%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+  }
+  .left {
+    width: 100%;
+    max-width: 55%;
+  }
+  .right {
+    margin-top: 2rem;
+    max-width: 35%;
+    width: 100%;
+    border-radius: 12px;
+    /* padding-left: 3rem; */
+  }
+  @media only screen and (max-width: 800px) {
+    .contactSection__wrapper {
+      flex-direction: column;
+      padding: 1.3rem;
+    }
+    .contactSection__wrapper::after {
+      display: none;
+    }
+    .left,
+    .right {
+      max-width: 100%;
+    }
+    .right {
+      padding: 1rem 0rem 1rem 0rem;
+    }
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .containerContact {
+    margin: 2rem 2rem 2rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .containerContact {
+    margin: 0rem 0rem 0rem 0rem;
+    border-radius: 0px;
+  }
+}

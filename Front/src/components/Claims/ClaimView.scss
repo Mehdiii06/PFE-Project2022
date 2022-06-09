@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.all2 {
+  margin-bottom: 2rem;
+  background: $bg;
+  border-radius: $borderRadius;
+  border: 2px dashed black;
+  min-height: calc(100vh - 9rem);
+  padding: 3rem 5rem 3rem 5rem;
+  font-family: $Montserrat;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2em;
+    h2 {
+      margin-bottom: 0em;
+    }
+    .closeBtn {
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .claim {
+    
+    padding-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    .status {
+      margin-bottom: .7rem;
+      color: $primary;
+      font-style: italic;
+      font-weight: normal;
+      font-size: large;
+    }
+    .pc {
+      font-size:large;
+    }
+    
+  }
+}

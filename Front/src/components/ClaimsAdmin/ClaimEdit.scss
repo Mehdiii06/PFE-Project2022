@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.all2 {
+    background: $bg;
+    border-radius: $borderRadius;
+    border: 2px dashed black;
+    min-height: calc(100vh - 9rem);
+    padding: 3rem 5rem 3rem 5rem;
+    font-family: $Montserrat;
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 4rem;
+
+      .closeBtn {
+          background: none;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+    }
+
+    .claim {
+        padding-right: 10rem;
+
+        .form {
+          margin-top: 2rem;
+            .select {
+                margin-bottom: 1.5em;
+                width: 10em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .status {
+          margin-bottom: .3em;
+          color: $primary;
+          font-style: italic;
+          font-weight: normal;
+        }
+        h3 {
+          font-weight: bold;
+          margin-bottom: 1em;
+        }        
+            display: flex;
+            flex-direction: row;
+            .save {
+                background: $primary;
+                border: 2px solid $primary;
+                width: 7rem;
+                margin-right: .5em;
+            }
+            
+      }
+    
+  }

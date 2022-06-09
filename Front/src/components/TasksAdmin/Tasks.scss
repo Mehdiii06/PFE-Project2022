@@ -1,0 +1,290 @@
+@import "../../styles/variables.scss";
+
+.grid-containerrr {
+  height: 35.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100%;
+  border-radius: $borderRadius;
+  background: $light;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
+  padding: 1rem;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-bottom: 1.5em;
+  padding-bottom: 5rem;
+
+  .barrr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tasksss {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 23.87% 23.87% 23.87% 23.87% 23.87% 23.87%;
+    column-gap: 1.5%;
+    height: 32.5rem;
+    overflow-x: scroll;
+    overflow-y: none;
+
+    .taskList {
+      height: 31rem;
+      border-width: 4px 0px 0px 0px;
+      border-style: solid;
+      display: grid;
+      grid-template-rows: 5% auto 5%;
+      row-gap: 1rem;
+      background: $bg;
+      padding-bottom: 1rem;
+      padding-top: 0.5rem;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+
+      .headerTask {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .addTaskk {
+          border: 0px;
+          padding: 0px;
+          .addicon {
+            border: 4px $primary;
+
+            color: #143f6b;
+            height: 1.5rem;
+            width: 1.5rem;
+          }
+        }
+      }
+      .cards {
+        overflow-y: auto;
+        display: grid;
+        grid-template-rows: repeat(1, 0fr);
+        row-gap: 0.4rem;
+        height: 27rem;
+        padding-right: 0.2rem;
+        align-content: flex-start;
+        .card {
+          padding: 0.4rem;
+          max-height: 8.5rem;
+          display: grid;
+          grid-template-rows: 21% auto 5%;
+          .titelTask {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            .objectTask {
+              font-size: small;
+              font-weight: bold;
+            }
+            .taskActions {
+              display: flex;
+              justify-content: flex-end;
+              .editBtn {
+                padding: 0px;
+                border: 0px;
+                background: none;
+              }
+              .editBtn:hover {
+                color: teal;
+              }
+              .assignedtoBtn {
+                margin-left: 0.4rem;
+                margin-right: 0.4rem;
+                padding: 0px;
+                border: 0px;
+                background: none;
+              }
+              .assignedtoBtn:hover {
+                color: darkorange;
+              }
+            }
+          }
+          .bodytask {
+            font-size: small;
+            font-weight: lighter;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          .footerTask {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .btnn {
+              display: flex;
+              flex-direction: row;
+              font-size: xx-small;
+              justify-content: center;
+              align-items: center;
+              .detbtn {
+                border: 0px;
+                background: blue;
+                color: red;
+                padding: 0px;
+              }
+            }
+            .datetask {
+              font-size: xx-small;
+            }
+          }
+        }
+      }
+
+        .cards::-webkit-scrollbar {
+          width: 0.2em;
+        }
+
+        .cards::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .cards::-webkit-scrollbar-thumb {
+          background-color: rgb(144, 144, 144);
+        }
+    }
+  }
+
+  .tasksss::-webkit-scrollbar {
+    height: 0.2em;
+  }
+
+  .tasksss::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .tasksss::-webkit-scrollbar-thumb {
+    background-color: rgb(144, 144, 144);
+  }
+}
+
+/* Add Form */
+
+.headerTaskForms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  h2 {
+    font-family: $Montserrat;
+    color: $primary;
+  }
+  button {
+    background: none;
+    border: 0px;
+  }
+}
+.formClaim {
+  .buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    .submit {
+      background: $primary;
+      border: 2px solid $primary;
+      width: 7rem;
+      margin-right: 0.5em;
+    }
+    .reset {
+      background: white;
+      border: 2px solid $primary;
+      width: 7rem;
+    }
+  }
+}
+.assignedTo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  .assignedToList {
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+    .assTo {
+      margin-top: 0.5rem;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 0.7em;
+      padding-right: 0.6em;
+      justify-content: flex-start;
+      .cancelBtn {
+        font-weight: bold;
+        padding-left: 0.55em;
+        padding-right: 0.55em;
+        
+        background: orangered;
+        border: 2px solid white;
+        border-radius: 40px;
+        color: white;
+        font-weight: bold;
+      }
+      .ass-user{
+        justify-content: center;
+        margin-right: 0.4em;
+        margin-left: 0.4em;
+      }
+    }
+  }
+}
+
+.unassignedTo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  .unassignedToList {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    justify-content: flex-start;
+    align-items: center;
+
+    .unassTo {
+      margin-top: 0.5rem;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 0.7em;
+      padding-right: 0.6em;
+      color: black;
+      .addBtn {
+        padding: 0px;
+        margin-right: 0.4em;
+        background: green;
+        border: 2px solid white;
+        border-radius: 40px;
+        color: white;
+        font-weight: bold;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        .adddd {
+          padding: 0px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .unass-user{
+        justify-content: center;
+        margin-right: 0.4em;
+        margin-left: 0.4em;
+      }
+    }
+  }
+}
